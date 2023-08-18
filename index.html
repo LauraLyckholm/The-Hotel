@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hotel</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <header class="hero">
+    <!-- Background video -->
+    <video playsinline autoplay muted loop poster="./images/hero-image.jpg" id="bgvid">
+      <source src="./images/hotel-hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+      <h1>- The Hotel -</h1>
+      <p>Offering peaceful getaways</p>
+    </div>
+  </header>
+
+  <!-- Signup form -->
+  <form action="https://httpbin.org/anything" method="post">
+    <!-- Full name field -->
+    <h2 class="form-area">Book your stay</h2>
+    <div class="form-area">
+      <label class="form-heading" for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="Firstname Lastname" required>
+    </div>
+
+    <!-- E-mail field -->
+    <div class="form-area">
+      <label class="form-heading" for="email">E-mail adress</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+    </div>
+
+    <!-- Phone field -->
+    <div class="form-area">
+      <label class="form-heading" for="phone">Phonenumber</label>
+      <input type="tel" id="phone" name="phone" placeholder="+46..." required>
+    </div>
+
+    <!-- Date field -->
+    <section class="form-section">
+      <div class="form-area">
+        <label class="form-heading" for="checkin-date">Check-in date</label>
+        <input type="date" id="checkin-date" name="checkin-date" required>
+      </div>
+      <div class="form-area">
+        <label class="form-heading" for="checkout-date">Check-out date</label>
+        <input type="date" id="checkout-date" name="checkout-date" required>
+      </div>
+    </section>
+    <div class="form-area" id="message"></div>
+
+    <!-- Option field -->
+    <div class="form-area">
+      <label class="form-heading" for="room-type">Room type</label>
+      <select id="room-type" name="room-type">
+        <option value="" disabled selected>Choose a room type</option>
+        <option value="single-room">Single room</option>
+        <option value="double-room">Double room</option>
+        <option value="suite">Suite</option>
+      </select>
+    </div>
+
+    <!-- Checkbox options -->
+    <h3 class="form-area special-heading">Special requests</h3>
+    <div class="form-buttons">
+      <input type="checkbox" id="extra-bed" name="special-request" value="extra-bed">
+      <label for="extra-bed">Extra bed</label>
+    </div>
+    <div class="form-buttons">
+
+      <input type="checkbox" id="extra-crib" name="special-request" value="extra-crib">
+      <label for="extra-crib">Extra crib</label>
+    </div>
+    <div class="form-buttons">
+
+      <input type="checkbox" id="balcony" name="special-request" value="balcony">
+      <label for="balcony">Balcony if possible</label>
+    </div>
+    <div class="form-buttons">
+
+      <input type="checkbox" id="extra-fruitplate" name="special-request" value="extra-fruitplate">
+      <label for="extra-fruitplate">Fruitplate at arrival</label>
+    </div>
+    <div class="form-buttons">
+
+      <input type="checkbox" id="extra-champagne" name="special-request" value="extra-champagne">
+      <label for="extra-champagne">Champagne at arrival</label>
+    </div>
+
+    <!-- Additional comments -->
+    <div class="form-area">
+      <label class="form-heading special-heading" for="comments">Additional comments</label>
+      <textarea id="comments" name="comments" rows="5"></textarea>
+    </div>
+
+    <!-- Submit form -->
+    <div class="form-area">
+      <button id="submit" type="submit">Make a booking request</button>
+    </div>
+  </form>
+
+  <footer>
+    <p>&copy Laura Lyckholm via Technigo</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
