@@ -14,7 +14,7 @@ The hero image was also changed for a videohero, so that I could practise creati
 
 ## View it live
 
-
+https://the-hotel-by-lyckholm.netlify.app/
 
 ## We who worked on the project
 
